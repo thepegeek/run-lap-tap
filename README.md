@@ -1,9 +1,4 @@
-To get started
-
-```
-open app.html
-```
-
+Demo : https://vinayakhegde.github.io/multi-runner-time-tracker-app/app.html 
 It is a javascript and html app.
 
 There is a "Add Name", "Start Race" and "End Race" buttons
