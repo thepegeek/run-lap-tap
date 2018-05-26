@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+	<title>Multi-Runner Lap Time Tracker</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="bootstrap.css">
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="app-content">
+		<div class="race-information col-md-3">
+			<div class="race-control add-competitor col-md-12">
+				<input id = "inputname" class="form-control" type="text" name="new" placeholder="Type the Name and hit enter...">
+				<button class="btn btn-primary col-md-12 col-xs-12" id="btnAdd">Add Name</button>
+			</div>
+			<div class="race-control col-md-12">
+				<button class="btn btn-success col-md-12 col-xs-12" id="btnStart" disabled>Start Race</button>
+				<button class="btn btn-danger col-md-12 col-xs-12" id="btnEnd" disabled>End Race</button>
+			</div>
+			<div class="race-info col-md-12">
+				<h4><u>Race Info</u></h4>
+				<h5 class="race-start-label col-md-12"> Race Start Date and Time<small id="racestarttime" class="race-start-time col-md-12">__/__/____ @ __:__:___.___</small>
+				</h5>
+				<h5 class="race-end-label col-md-12"> Race End Date and Time<small id="raceendtime" class="race-end-time col-md-12">__/__/____ @ __:__:___.___</small>
+				</h5>
+			</div>
+			<div class="race-result col-md-12">
+				<h4><u>Race Winner</u></h4>
+
+				<h5 id="winnername" class="col-md-12"> Race Winner will be one with the highest lap count and lowest overall time</h5>
+				<h5 id="winnerlapcount" class="col-md-12"></h5>
+				<h5 id="winnerlapavgtime" class="col-md-12"></h5>
+			</div>
+			<div class="race-result col-md-12">
+				<h4><u>Fastest Lapper</u></h4>
+
+				<h5 id="fastestname" class="race-fastest-lap col-md-12">
+					 Fastest Lapper will be one with the fastest (completed) lap and the time taken for it
+				</h5>
+				<h5 id="fastestlap" class="col-md-12"></h5>
+				<h5 id="fastesttime" class="col-md-12"></h5>
+			</div>
+		</div>
+		<div class="race-card col-md-9">
+			<div class="header-details col-md-12">
+				<span class="column col_1">Name</span>
+				<span class="column col_2">Lap Count</span>
+				<span class="column col_3">Total Time</span>
+				<span class="column col_4">Average Time</span>
+				<span class="column col_5">Last Lap Time</span>
+			</div>
+			<div class="race-details"></div>
+		</div>
+	</div>
+</body>
+</html>
+
